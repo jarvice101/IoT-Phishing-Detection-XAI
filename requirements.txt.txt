@@ -1,0 +1,7 @@
+streamlit
+torch
+transformers
+tensorflow
+numpy
+groq
+pickle-mixin
