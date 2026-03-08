@@ -4,3 +4,4 @@ transformers
 tensorflow>=2.15.0
 numpy<2.0.0
 groq
+scikit-learn
