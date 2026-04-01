@@ -16,7 +16,7 @@ GROQ_API_KEY = st.secrets.get("GROQ_API_KEY", "gsk_D484cN8DA7JaSh2ThDzpWGdyb3FYc
 client_groq = Groq(api_key=GROQ_API_KEY)
 
 class DistilBertClassifier(torch.nn.Module):
-    def __init__(self):
+    def init(self):
         super(DistilBertClassifier, self).__init__()
         self.distilbert = DistilBertModel.from_pretrained('distilbert-base-uncased')
         self.classifier = torch.nn.Linear(768, 2)
